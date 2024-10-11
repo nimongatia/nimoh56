@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop Page</title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <section id="header">
+           <div>
+               <ul id="navbar">
+                   <a href="#" id="close"><i class="fas fa-times"></i></a>
+                   <li class="logo"><a href="index.html"><img src="imagefolder/realritzy.webp" alt="Logo" /></a></li>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a class="active" href="shop.html">Shop</a></li>
+                   <li><a href="blog.html">Blog</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+               </ul>
+           </div>
+           <div id="mobile">
+               <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+               <i id="bar" class="fas fa-bars"></i>
+           </div>
+       </section>
+
+       <section id="page-header">
+           <h2># FreeNation</h2>
+           <p>Save 50% of your money</p>
+       </section>
+
+       <section id="product1" class="section-p1">
+           <div class="pro-container">
+               <div class="pro">
+                   <img src="imagefolder/babtt2.jpeg" alt="Baby T-shirts">
+                   <div class="des">
+                       <span>Addidas</span>
+                       <h5>Baby T-shirts</h5>
+                       <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                       <h4>Ksh 300</h4>
+                   </div>
+                   <button class="normal" onclick="addToCart('Baby T-shirts', 300, 'imagefolder/babtt2.jpeg')">Add to Cart</button>
+               </div>
+               <div class="pro">
+                   <img src="imagefolder/hawaii1.jpeg" alt="Hawaii Shirts">
+                   <div class="des">
+                       <span>Addidas</span>
+                       <h5>Men's Classic Hawaii Shirts</h5>
+                       <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                       <h4>Ksh 1200</h4>
+                   </div>
+                   <button class="normal" onclick="addToCart('Men\'s Classic Hawaii Shirts', 1200, 'imagefolder/hawaii1.jpeg')">Add to Cart</button>
+               </div>
+               <div class="pro">
+                <img src="imagefolder/mxidress.jpeg" alt="Summer dress">
+                <div class="des">
+                    <span>Zara</span>
+                    <h5>summer dress</h5>
+                    <div class="star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Ksh 1000</h4>
+                </div>
+                <button class="normal" onclick="addToCart('summer dress', 1000, 'imagefolder/mxidress',)">Add to Cart</button>
+            </div>
+            <div class="pro">
+              <img src="imagefolder/mensjorts.jpeg" alt="mens shorts">
+              <div class="des">
+                  <span>Addidas</span>
+                  <h5>mens shorts</h5>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>Ksh 1500</h4>
+              </div>
+              <button class="normal" onclick="addToCart('mens shorts', 1500, 'imagefolder/mensjorts')">Add to Cart</button>
+          </div>
+          <div class="pro">
+            <img src="imagefolder/glasses.jpeg" alt="shades">
+            <div class="des">
+                <span>Addidas</span>
+                <h5>shades</h5>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h4>Ksh 400</h4>
+            </div>
+            <button class="normal" onclick="addToCart('shades', 400, 'imagefolder/glasses.jpeg')">Add to Cart</button>
+        </div>
+        <div class="pro">
+          <img src="imagefolder/vest.jpeg" alt="unisex vest">
+          <div class="des">
+              <span>Addidas</span>
+              <h5>unisex vest</h5>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>Ksh 600</h4>
+          </div>
+          <button class="normal" onclick="addToCart('unisex vests', 600, 'imagefolder/vest.jpeg')">Add to Cart</button>
+      </div>
+      <div class="pro">
+        <img src="imagefolder/sandals.jpeg" alt="classy sandals">
+        <div class="des">
+            <span>Addidas</span>
+            <h5>classy sandals</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>Ksh 1200</h4>
+        </div>
+        <button class="normal" onclick="addToCart('classy sandals', 1200, 'imagefolder/sandals.jpeg')">Add to Cart</button>
+    </div>
+    <div class="pro">
+      <img src="imagefolder/crocs.jpeg" alt="crocs">
+      <div class="des">
+          <span>crocky</span>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h5>crocs</h5>
+          <h4>Ksh 800</h4>
+      </div>
+      <button class="normal" onclick="addToCart('crocs', 300, 'imagefolder/crocs.jpeg')">Add to Cart</button>
+  </div>
+  
+               <!-- Add more products as needed -->
+           </div>
+       </section>
+
+
+
+       <section id="newsletter" class="section-p1 section-m1" >
+        <div class="newstext">
+          <h4>sign up for newsletter</h4>
+          <p>get E-mail updates about our latest shop and <span>special offers.</span>
+          </p>
+        </div>
+        <div class="form">
+          <input type="text" placeholder="your email address">
+          <button>Sign up</button>
+        </div>
+      </section>
+
+
+       <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src=""alt"">
+          <h4>Contact</h4>
+          <p><strong>Adress: </strong> Mombasa Road</p>
+          <p><strong>pbone: </strong>+254788898776</p>
+          <p><strong>Hours</strong>24/7</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About us</a>
+          <a href="#">Delivery information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & conditions</a>
+          <a href="#">Contact us</a>
+        </div>
+
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign in</a>
+          <a href="#">View cart</a>
+          <a href="#">My wishlist</a>
+          <a href="#">Track my Order</a>
+          <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+          <h4>install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+          <p>Secure payment Gateaways</p>
+          <img src="" alt="">
+        </div>
+
+           <div class="copyright">
+               <p>&copy; 2024, myweb.com</p>
+           </div>
+       </footer>
+
+       <script src="js.js"></script>
+
+       <script>
+           // Function to add items to the cart
+           function addToCart(name, price, image) {
+               let cart = JSON.parse(localStorage.getItem('cart')) || [];
+               const existingItem = cart.find(item => item.name === name);
+               if (existingItem) {
+                   existingItem.quantity++;
+               } else {
+                   cart.push({ name, price, image, quantity: 1 });
+               }
+               localStorage.setItem('cart', JSON.stringify(cart));
+               alert(`${name} has been added to your cart!`);
+           }
+       </script>
+    </body>
+</html>
+
+
